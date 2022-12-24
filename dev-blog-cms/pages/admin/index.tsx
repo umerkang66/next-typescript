@@ -1,14 +1,8 @@
 import { NextPage } from 'next';
-import AdminNav from '../../components/common/admin-nav';
+import AdminLayout from '../../components/layout/admin-layout';
 
-type Props = {};
-
-const Admin: NextPage<Props> = props => {
-  return (
-    <div>
-      <AdminNav />
-    </div>
-  );
+const Admin: NextPage = () => {
+  return <AdminLayout>ADMIN DASHBOARD</AdminLayout>;
 };
 
 export default Admin;
